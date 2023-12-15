@@ -1,0 +1,382 @@
+* {
+    box-sizing: border-box;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+  body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Courier Prime", monospace;
+    background-color: #fdfdfe;
+  }
+  header {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  
+  header h1 {
+    font-size: 70px;
+    font-weight: 500;
+    color: maroon;
+    border-right: 4px solid #000;
+    animation: cursor 1s infinite step-end, typing 15s infinite steps(16);
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  @keyframes cursor{
+    0%, 100%{border-color: transparent;}
+    50%{border-color: #000;}
+  }
+  
+  @keyframes typing{
+    0%{ width: 0ch}
+    30%{ width: 60ch;} 
+    80%{ width: 60ch;} 
+    90%{ width: 0ch;}
+    100%{ width: 0ch;} 
+  }
+
+
+  div.gallery {
+    margin: 70px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 350px;
+    height: 200px;
+  }
+  
+  div.gallery {
+    width: 350px;
+    height: 200px;
+  }
+  
+  .column {
+    float: left;
+    width: 33.33%;
+    height: fit-content;
+    padding: 4px;
+  }
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  input.right{
+    float:right;
+  
+  }
+  
+  input.left{
+    float:left;
+  
+  }
+
+  .My_Animation{
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+  }
+  
+.My_Animation > div{
+  flex: 1;
+  border-radius: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  transition: all .8s cubic-bezier(.25,.4,.45,1.4);
+
+}
+.My_Animation > div:hover {
+  flex: 5;
+}
+  
+  
+  .right {
+    background-color:green ;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 3px 1px;
+    cursor:pointer;
+  }
+
+  
+  .left {
+    background-color:rgb(22, 104, 234);
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 3px 1px;
+    cursor: pointer;
+  }
+
+  h3{
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    transition: cubic-bezier();
+
+
+
+  }
+
+  .tnov{
+    position: absolute;
+    width: 300px;
+    margin-left: 1200px;
+    margin-top: -60px;
+  }
+  .tnov button{
+    width: 100px;
+    margin-left: 200px;
+    margin-top: -60px;
+    
+  }
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+h1{
+  text-align: left;
+  text-shadow: #04AA6D;
+  -webkit-text-fill-color: maroon;
+  text-decoration-style: initial;
+  margin: 30px;
+
+}
+
+.social{
+  text-align:right ;
+  cursor: pointer;
+  -webkit-text-fill-color: maroon;
+  position: absolute;
+  margin-left: 40px;
+  font-size:xx-large;
+  vertical-align: text-top;
+}
+
+
+ .contact{
+  vertical-align: top;
+ }
+
+ 
+body {font-family: Arial, Helvetica, sans-serif;}
+ 
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 60px;
+}
+
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 50%; 
+}
+
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.cbtn{
+  
+  width: 400px;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+
+/* ___________________________________________________________________________ */
+
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+* {
+  box-sizing: 500px;
+  padding: 0;
+  margin: 0;
+  font-family: 'Mochiy Pop One', sans-serif;
+}
+
+
+ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+ul li {
+  position: relative;
+  list-style: none;
+}
+ul li a {
+  font-size: 2em;
+  text-decoration: none;
+  letter-spacing: 2px;
+  line-height: 1em;
+  text-transform: uppercase;
+  color: black;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+}
+ul li a::before {
+  content: attr(data-text);
+  position: absolute;
+  color: var(--clr);
+  width: 0;
+  overflow: hidden;
+  transition: 1s;
+  border-right: 8px solid var(--clr);
+  -webkit-text-stroke: 1px var(--clr);
+}
+ul li a:hover::before {
+  width: 30%;
+  filter: drop-shadow(0 0 25px var(--clr))
+}
